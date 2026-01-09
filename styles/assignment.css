@@ -10,6 +10,8 @@
 }
 
 .btn {
+    display: inline-flex;
+    justify-content: center;
     background-color: #30B868;
     border: none;
     border-radius: 4px;
@@ -18,9 +20,11 @@
     font-weight: 600;
     color: #ffff;
     cursor: pointer;
+    gap: 10px;
 }
 
 .btn2{
+    margin-left: 16px;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 4px;
@@ -64,8 +68,11 @@ nav .menu {
     font-weight: 500;
 }
 
+nav .menu a{
+    text-decoration: none;
+    color: inherit;
+}
 #banner{
-    border: 1px solid black;
     width: 100%;
     max-width: 1626px;
     align-items: center;
@@ -85,8 +92,6 @@ nav .menu {
 }
 
 #banner p{
-    margin-top:16px ;
-    margin-bottom: 32px;
     margin-left: 30px;
     margin-right: 30px;
     font-size: 18px;
@@ -96,20 +101,72 @@ nav .menu {
 
 }
 
+
 .bt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffff;
     border: none;
     border-radius: 1000px;
     padding: 8px 12px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #30B868;
+    cursor: pointer;
+    gap: 6px;
 }
+
+.bt .circle-0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.bt .circle-0 .circle-1, .circle-2, .circle-3{
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bt .circle-0 .circle-1{
+    height: 16px;
+    width: 16px;
+    background-color: #30B868;
+    opacity: 30%;
+
+}
+
+
+
+.bt .circle-0 .circle-2{
+    height: 12px;
+    width: 12px;
+    background-color: #30B868;
+    opacity: 50%;
+
+}
+
+.bt .circle-0 .circle-3{
+    height: 8px;
+    width: 8px;
+    background-color: #30B868;
+
+}
+
 
 #second{
     padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
     background-color: white;
 } 
+
 
 #second .second-container{
     width: 84%;
@@ -212,3 +269,80 @@ nav .menu {
     align-items: flex-start;
     margin: 20px;
     }
+
+#ready{
+    background-color: #F7F6F2;
+    border-radius: 12px;
+    max-width: 1360px;
+    text-align: center;
+    align-items: center;
+    padding: 80px;
+    margin-left: 120px;
+    margin-right: 120px;
+}    
+
+#ready h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+
+#foot{
+    width: 100%;
+    max-width: 1626px;
+    margin-top: 120px;
+    background-color:rgb(3, 3, 44) ;
+}
+
+#foot .logo-social{
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 1004px;
+}
+
+#foot .logo-social .ls{
+    display: flex;
+    margin-top: 16px;
+    list-style: none;
+    gap: 16px;
+}
+
+#foot   .logo-social .ls li{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot   .logo-social .ls img{
+    width: 11.5px;
+    height: 11.5px;
+
+}
+
+#foot .border{
+    background-color: white;
+    height: 0.5px;
+    width: 1360px;
+    color: #F7F6F2;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot .copy{
+   
+    padding: 30px ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #FAFAFA;
+    font-size: 16px;
+    line-height: 16px;
+}
